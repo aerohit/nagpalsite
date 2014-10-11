@@ -1,8 +1,4 @@
 name: rohit nagpal
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 permalink: /scribbles/:title
-analytics :
-  provider : google
-  google : 
-      tracking_id : 'UA-907966-2'
