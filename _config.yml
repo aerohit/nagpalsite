@@ -1,0 +1,8 @@
+name: rohit saxena
+markdown: redcarpet
+pygments: true
+permalink: /scribbles/:title
+analytics :
+  provider : google
+  google : 
+      tracking_id : 'UA-907966-2'
