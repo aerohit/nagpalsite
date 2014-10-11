@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Resume</title>
+
+    <link rel="stylesheet" href="https://github.com/themes/minimal/stylesheets/styles.css" media="screen">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <script src="https://github.com/themes/minimal/javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+	<h1 class="title"><a href="/">rohit nagpal</a></h1>
+
+	<p class="view"><a href="/">About <small>Who am I</small></a></p>
+	<p class="view"><a href="http://anganitagya.wordpress.com/" target="tab">Scribbles <small>Where I crib</small></a></p>
+	<p class="view"><a href="/projects">Projects <small>Open and not so open</small></a></p>
+	<p class="view"><a href="/resume">Resume <small>The technical details</small></a></p>
+	<p class="view"><a href="/education">Education <small>The culprits</small></a></p>
+	<p class="view"><a href="https://github.com/aerohit" target="tab">GitHub<small>Where I embarrass myself</small></a></p>
+
+      </header>
+
+      <section id="main">
+
+	<h1>The technical details</h1>
+
+<hr>
+
+<h2>Overview of my current and previous jobs</h2>
+
+<h3>Research Engineer at <strong>INRIA</strong>, France (Jan 2013 - present)</h3>
+
+<p>I am currently working as a research engineer at <strong><a href="http://www.inria.fr/en/">INRIA</a></strong> with the
+<strong><a href="http://www.irisa.fr/kerdata/doku.php">KerData</a></strong> research group, which is focussed on development
+of Scalable Storage for Clouds. I am hired to develop features in <a href="http://blobseer.gforge.inria.fr/doku.php">BlobSeer-WAN</a>,
+a large-scale data storage service on geographically distributed clusters. My work here includes:</p>
+
+<ul>
+<li><p>Implementing asynchronous replication of data saved on one site to other geographically distributed sites to 
+facilitate faster access. </p></li>
+<li><p>Using BlobSeer-WAN as a more efficient storage backend for HGMDS, a distributed metadata management
+system for global file systems, and study the performance gains.</p></li>
+</ul>
+
+<p>I am getting experience in developing storage for big-data in the order of terabytes supporting high throughput
+under heavy concurrent access. The storage service is written in C++ and makes heavy usage of Boost libraries.</p>
+
+<h3>Software Engineer at <strong>iLodge</strong> (Jul 2011 - Dec 2012)</h3>
+
+<p><strong><a href="http://www.ilodge.com">iLodge</a></strong> is a start-up in travel space, trying to develop a 
+cloud based enterprise platform called <em>Connect</em> to combine tech and non-tech components for 
+online travel; bringing in travel and social media closer. I was the third employee and
+a core member of a team comprising of people from Google and Adobe. Some of the work that I have done 
+here includes:</p>
+
+<ul>
+<li><p>Indexing framework over <a href="http://aws.amazon.com/simpledb/">Amazon SimpleDb</a> to provide search over
+the data maintained by iLodge. Also implemented <em>hierarchical</em> indexing for range-type attributes. 
+SimpleDb puts a restriction on the maximum number of values for any attribute while searching. There
+are some range-type attributes which can be indexed hierarchically. The hierarchical index circumvents
+these restrictions and allows larger searches.</p></li>
+<li><p>A fault tolerant background task framework for executing tasks in a non-blocking, 
+retryable manner. In a cloud based application tasks could fail due to unavailability
+of servers and hence they should be retryable. This is used extensively by the indexing 
+framework and other services. Tasks which have failed are automatically triggered 
+whenever the corresponding server is up.</p></li>
+<li><p>Transaction framework for executing transactional database operations. SimpleDb is not a relational
+database and it doesn&#39;t provide complex transactions and relations. Hence this framework was
+developed to provide support for complex operations.</p></li>
+<li><p>An id-generator to generate unique string-ids for data to be persisted on <em>Amazon SimpleDb</em>. 
+SimpleDb is a non-relational database, and unique reference to the data has to be generated.
+The challenge is to ensure uniqueness across multiple instances of JVMs or application
+servers running in parallel and their corresponding shutdown and restarts.</p></li>
+<li><p>An automatic code generator for generating <a href="https://developers.google.com/web-toolkit/">GWT</a>
+json overlays by parsing <a href="http://code.google.com/p/protobuf/">protobuf</a> files. These json overlays
+are JavaScript equivalent of <a href="http://en.wikipedia.org/wiki/Plain_Old_Java_Object">POJOs</a> and are
+used extensively on the browser UI to handle client side data. Their automatic generation 
+saves considerable amount of developer time.</p></li>
+<li><p>A <em>time profiling</em> tool for measuring the performance of the cloud based multi-threaded
+application. This tool helps to analyze and subsequently optimize the time taken to execute any 
+operation including that by individual threads started by its execution.</p></li>
+<li><p>A <em><a href="http://en.wikipedia.org/wiki/Generics_in_Java">generic</a></em> REST api for the various
+entities/resources persisted in the database.</p></li>
+<li><p>A framework for management of inventories of products being sold by <em>Connect</em>. </p></li>
+</ul>
+
+<p>While working here I have learnt about designing and implementing a cloud based, distributed
+platform based on services-oriented architecture from scratch.</p>
+
+<h3>Research and Development Engineer at <strong>Knowlarity</strong> (Apr 2011 - Jun 2011)</h3>
+
+<p><strong><a href="http://www.knowlarity.com">Knowlarity</a></strong> is a mid-sized company in the domain of <em>cloud
+telephony</em>. I was working in their core technical team to develop a scalable platform to 
+create and host their products. My work here included:</p>
+
+<ul>
+<li><p>Developing an innovative <em>IVR</em> based trouble shooting system to be used by power plants. This
+system was a very cheap alternative to sophisticated/costly trouble shooting systems used
+by technicians in difficult locations.</p></li>
+<li><p>An information gathering and dissemination system used by the government of Uttar Pradesh
+for collecting daily statistics related to mid-day meal scheme run in primary schools.</p></li>
+<li><p>Developed a notification system to report failures in performing requests by the services 
+underlying their platform and persisting information to debug and/or execute them again.</p></li>
+</ul>
+
+<h3>Application Developer at <strong>ThoughtWorks</strong> (Jun 2010 - Mar 2011)</h3>
+
+<p><strong><a href="http://www.thoughtworks.com">ThoughtWorks</a></strong> is famous as one of the pioneers of Agile
+software development.</p>
+
+<ul>
+<li><p>Worked on a project to setup an internal cloud for ThoughtWorks using <a href="http://openstack.com">OpenStack&#39;s</a> 
+cloud controller to create Virtual Machines on the fly for their development teams. My task
+included deploying it on a yet untested distro (CentOS), submitting bug fixes, writing bash
+scripts for automatic deployments of missing dependencies etc.</p></li>
+<li><p>I also developed database backed enterprise web applications in Ruby on Rails framework.</p></li>
+<li><p>Learned best practices of software development including Test Driven Development,
+Design Patterns, DRY principle, etc from the best in the industry.</p></li>
+</ul>
+
+
+      </section>
+
+      <footer>
+      <p><small>
+	Theme by <a href="https://github.com/orderedlist">orderedlist</a>
+      </small></p>
+      </footer>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+      <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-907966-2', 'aerohit.github.io');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
