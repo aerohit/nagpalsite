@@ -14,62 +14,34 @@
   <body>
     <div class="wrapper">
       <header>
-	<h1 class="title"><a href="/">rohit nagpal</a></h1>
+	<h1 class="title"><a href="/">Rohit Nagpal</a></h1>
 
 	<p class="view"><a href="/">About <small>Who am I</small></a></p>
-	<p class="view"><a href="http://anganitagya.wordpress.com/" target="tab">Scribbles <small>Where I crib</small></a></p>
 	<p class="view"><a href="/research">Research <small>Open and not so open</small></a></p>
-	<p class="view"><a href="/resume">Resume <small>The technical details</small></a></p>
-	<p class="view"><a href="/teaching">Teaching <small>The culprits</small></a></p>
+	<p class="view"><a href="http://www.math.wisc.edu/~nagpal/cv.pdf">CV <small>The technical details</small></a></p>
+	<p class="view"><a href="/teaching">Teaching <small>How to hunt?</small></a></p>
+        <p class="view"><a href="http://anganitagya.wordpress.com/" target="tab">Anganitagya <small>The Math blog</small></a></p>
+
 
       </header>
 
       <section id="main">
 
-	<h1>Education</h1>
+	<h1>Math 171 Fall 2014</h1>
 
 <hr>
 
-<p>I graduated from <strong>Indian Institute of Technology Kanpur</strong> in 2010 with a B.Tech-M.Tech dual degree in Aerospace 
-Engineering, with specialization in parallel numerical algorithms. My master&#39;s thesis was
-titled <em><a href="downloads/thesis_rohit_saxena.pdf">&quot;Parallel Computation of 3-D Flow in a Mixed Compression Air-Intake&quot;</a></em>.</p>
+<h2>Office hours</h2>
 
-<h2>Master&#39;s thesis</h2>
+<h3>4:00-5:00 WF (818 Van Vleck)</h3>
 
-<h5>Dec 2008 - Jul 2010</h5>
+<h2>Email</h2>
 
-<h4>Parallel Computation of 3-D Flow in a Mixed Compression Air-Intake.</h4>
+<h3>nagpal@math.wisc.edu</h3>
 
-<ul>
-<li>The objective was to study the behaviour of air-flow inside jet air-intakes at supersonic
-speeds by doing numerical simulations. The compressible nature of the flow and the presence 
-of shocks (discontinuity in media) makes its accurate simulation difficult.</li>
-<li>A Finite Element Formulation of the governing Navier-Stokes equations, a set of non-linear
-partial differential equations, was done to obtain a matrix system of linear equations. The
-solution to these equations gives the value of flow variables: velocity, pressure and tempreture,
-at discrete points in the domain.</li>
-<li>The size of the matrix system depends on the number of such discrete points in which the domain
-is divided and the degree of freedom of each point. This system needs to be solved for increasing 
-values of time to get a continuous solution in time. The size of the matrix system I was working on 
-was of the order of <em>10 million</em>. </li>
-<li>To make this problem computationally tractable, it becomes necessary to solve it parallely, which was 
-the motivation for my thesis. I developed a solver in Fortran using <strong>MPI</strong> libraries, which partitions
-the domain into subdomains, and solves them on a multi-node cluster. Post processing routines were also
-developed to visualize the solutions obtained.</li>
-<li>The project was highly interdisciplinary involving concepts from Fluid Dynamics, Mathematics
-and Parallel Computing.</li>
-</ul>
+<h2>Course Webpage</h2>
 
-<p>A copy of the thesis could be downloaded from <a href="downloads/thesis_rohit_saxena.pdf">here</a>.</p>
-
-<p>I was also a <strong>research assistant</strong> for a couple of months in the CFD lab, during which I continued
-work on the masters thesis.</p>
-
-<ul>
-<li>Scaled and did speed-up studies for the parallel application developed in my Master&#39;s thesis.</li>
-<li>Tweaked the application to adaptively determine the most optimal use of resources, memory
-and processors, and allocate them dynamically based on speed-up analysis.</li>
-</ul>
+<h3><b><a href="http://www.math.wisc.edu/~dymarz/171", target="tab">171</b></a></h3>
 
 
       </section>
